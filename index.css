@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: Lexend Deca;
+}
+
+.barras-menu {
+  display: none;
+  margin-left: 2rem;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  margin-left: 2rem;
+  width: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  font-size: 12px;
+  padding-top: 1rem;
+}
+
+.iconos {
+  padding-top: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+nav .barras-menu {
+  padding-top: 1rem;
+}
+
+.tipos {
+  display: flex;
+  flex-direction: row;
+  background-color: #f1f1f1;
+}
+.tipos img {
+  width: 230px;
+  height: 150px;
+  opacity: 0.5;
+}
+
+.t-auricular {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+.t-auricular .container {
+  margin-left: 20px;
+}
+.t-auricular:hover img {
+  opacity: 1;
+}
+
+.t-auricularx {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background-color: black;
+  color: white;
+}
+.t-auricularx .container {
+  margin-left: 20px;
+}
+.t-auricularx .imgx {
+  opacity: 1;
+}
+
+.s-auricular {
+  display: none;
+  margin-top: 40px;
+}
+
+.s-auricularx {
+  display: none;
+  margin-top: 40px;
+}
+
+.auriculares {
+  display: grid;
+  flex-direction: row;
+  margin-left: 2rem;
+  grid-template-columns: 2fr 1fr;
+}
+.auriculares .circumaurales {
+  width: 100%;
+}
+.auriculares .circumaurales p {
+  width: 90%;
+  color: #555555;
+}
+.auriculares .circumaurales p a {
+  color: black;
+}
+.auriculares .productos p {
+  margin-right: 2rem;
+  text-align: right;
+  color: #555555;
+}
+
+.versiones-a {
+  margin-left: 30px;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5rem;
+}
+.versiones-a .vers {
+  font-size: 13px;
+  margin-right: 30px;
+}
+.versiones-a .vers img {
+  width: 100%;
+  background-color: #fafafa;
+}
+.versiones-a .vers .containervers .comentario {
+  color: #555555;
+}
+
+.tablav {
+  font-size: 13px;
+}
+.tablav h2 {
+  margin-left: 8rem;
+  margin-bottom: 4rem;
+}
+.tablav table {
+  width: 85%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 5rem;
+}
+.tablav table tr {
+  height: 2rem;
+}
+.tablav table tr td {
+  font-size: 16px;
+  font-weight: bold;
+}
+.tablav table tr th {
+  color: #555555;
+}
+.tablav table .column1 {
+  display: none;
+}
+.tablav table .linea {
+  border-top: 0.5px solid #e1e3e6;
+}
+
+@media screen and (max-width: 1075px) {
+  .auriculares {
+    grid-template-columns: 1fr;
+  }
+  .auriculares .productos {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .menu {
+    display: none;
+  }
+  .ilogin {
+    display: none;
+  }
+  .istore {
+    display: none;
+  }
+  .barras-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tipos {
+    overflow: auto;
+  }
+  .t-auricular {
+    flex-shrink: 0;
+  }
+  .t-auricularx {
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .auriculares {
+    grid-template-columns: 1fr;
+  }
+  .auriculares .productos p {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 770px) {
+  .tablav table .column1 {
+    display: table-row;
+  }
+  .tablav table .column1 th {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .tablav table .ocultatd {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .versiones-a {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .t-auricular {
+    display: none;
+  }
+  .t-auricularx {
+    display: none;
+  }
+  .s-auricular {
+    display: block;
+    margin-bottom: 30px;
+    background-color: white;
+    width: 190px;
+    height: 80px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  .s-auricular .container {
+    width: 200px;
+  }
+  .s-auricularx {
+    display: block;
+    margin-bottom: 30px;
+    background-color: black;
+    color: white;
+    width: 190px;
+    height: 80px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  .s-auricularx .container {
+    width: 200px;
+  }
+}
